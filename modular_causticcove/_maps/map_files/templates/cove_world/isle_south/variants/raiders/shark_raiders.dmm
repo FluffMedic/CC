@@ -144,7 +144,13 @@
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/outdoors/rtfield)
 "K" = (
-/obj/structure/bed/rogue/shit,
+/obj/structure/mineral_door/wood/red{
+	locked = 1
+	},
+/obj/effect/spawner/trap,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/rtfield)
+"N" = (
 /mob/living/carbon/human/species/akula/npc/rogue,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
@@ -372,7 +378,7 @@ V
 b
 b
 w
-K
+w
 b
 b
 V
@@ -385,14 +391,14 @@ P
 P
 P
 B
+N
 P
 P
 P
 P
 P
 P
-P
-P
+N
 B
 P
 P
@@ -418,7 +424,7 @@ P
 (5,1,2) = {"
 P
 P
-e
+K
 P
 P
 B
@@ -427,7 +433,7 @@ g
 B
 P
 P
-e
+K
 P
 P
 P
