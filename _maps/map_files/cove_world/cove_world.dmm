@@ -90262,7 +90262,7 @@
 /turf/open/floor/rogue/concrete,
 /area/rogue/under/town/basement)
 "qPV" = (
-/obj/item/carvedgem/coral,
+/obj/item/roguegem/coral,
 /turf/open/water/transparent/inner/ocean,
 /area/underwater)
 "qQc" = (
@@ -94932,6 +94932,10 @@
 	},
 /turf/open/floor/rogue/rooftop/green/north,
 /area/rogue/indoors/town/tavern)
+"rKb" = (
+/obj/effect/decal/cleanable/debris/stony,
+/turf/open/floor/rogue/naturalstone,
+/area/rogue/outdoors/rtfield)
 "rKh" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/floor/rogue/grass,
@@ -103259,6 +103263,10 @@
 	},
 /turf/open/floor/rogue/concrete,
 /area/rogue/indoors/inq/basement)
+"tnr" = (
+/obj/effect/decal/cleanable/debris/stony,
+/turf/open/floor/rogue/AzureSand,
+/area/rogue/outdoors/beach/south)
 "tns" = (
 /obj/structure/vine{
 	opacity = 1
@@ -110577,6 +110585,10 @@
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/outdoors/town/roofs/keep)
+"uGU" = (
+/obj/effect/decal/remains/human,
+/turf/open/water/cleanshallow,
+/area/rogue/outdoors/rtfield)
 "uGX" = (
 /turf/closed/wall/mineral/rogue/wooddark,
 /area/rogue/indoors/shelter)
@@ -239287,7 +239299,7 @@ bYx
 bYx
 bYx
 bYx
-qxc
+tnr
 qxc
 cLo
 cLo
@@ -239740,7 +239752,7 @@ bYx
 bYx
 bYx
 bYx
-qxc
+tnr
 qxc
 cLo
 cLo
@@ -349599,7 +349611,7 @@ fii
 lIE
 lFM
 fVo
-fVo
+uGU
 lFM
 lFM
 lIE
@@ -350050,7 +350062,7 @@ pSg
 fii
 lIE
 lFM
-fVo
+uGU
 fVo
 lFM
 lFM
@@ -352735,7 +352747,7 @@ fii
 fii
 fii
 fii
-aoe
+rKb
 aoe
 fii
 fii
@@ -353641,7 +353653,7 @@ fii
 aoe
 aoe
 aoe
-aoe
+rKb
 aoe
 aoe
 aoe
@@ -354091,8 +354103,8 @@ fii
 fii
 fii
 aoe
-aoe
-aoe
+rKb
+rKb
 aoe
 aoe
 aoe
