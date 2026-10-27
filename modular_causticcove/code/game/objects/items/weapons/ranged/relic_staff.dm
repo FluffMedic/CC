@@ -19,14 +19,14 @@
 	name = "inferno staff"
 	icon_state = "infernalstaff"
 	specialcaster_effect = 2
-	special = /datum/special_intent/whip_coil
+	special = /datum/special_intent/infernal_staff_erruption
 
 /obj/item/rogueweapon/woodstaff/implement/special/earth
 	base_implement_name = "mountain staff"
 	name = "mountain staff"
 	icon_state = "earthstaff"
 	specialcaster_effect = 3
-	special = /datum/special_intent/ground_smash
+	special = /datum/special_intent/mountain_staff_slam
 
 //related buffs
 //fae
@@ -125,3 +125,70 @@
 			qdel(orb)
 	orb_visuals = null
 	return ..()
+
+//special attacks
+#define INFERNALSTAFF1 0.8 SECONDS
+#define INFERNALSTAFF2 1.4 SECONDS
+#define INFERNALSTAFF3 2 SECONDS
+/datum/special_intent/infernal_staff_erruption
+	name = "Infernal Erruption"
+	desc = "Flames errupt around you, in a chaotic seeming pattern."
+	tile_coordinates = list(
+		list(0,0), list(0,-2), list(-2,-3), list(0,1), list(2,-3),
+		list(1,0, INFERNALSTAFF1), list(-1,-2, INFERNALSTAFF1), list(1,1, INFERNALSTAFF1), list(-1,1, INFERNALSTAFF1), list(2,-2, INFERNALSTAFF1), list(-1,-2, INFERNALSTAFF1),
+		list(1,-1, INFERNALSTAFF2), list(-1,-1, INFERNALSTAFF2), list(1,-2, INFERNALSTAFF2), list(-1,-2, INFERNALSTAFF2), list(2,1, INFERNALSTAFF2), list(-1,1, INFERNALSTAFF2),
+		list(1,-2, INFERNALSTAFF3), list(-1,0, INFERNALSTAFF3), list(-2, -1, INFERNALSTAFF3), list(2, -1, INFERNALSTAFF3)
+
+	)
+	use_clickloc = FALSE
+	respect_adjacency = TRUE
+	respect_dir = TRUE
+	delay = 0.7 SECONDS
+	fade_delay = 0.5 SECONDS
+	pre_icon = 'icons/effects/telegraph.dmi'
+	pre_icon_state = "warning"
+	post_icon_state = "flame"
+	sfx_pre_delay = 'sound/combat/wooshes/bladed/wooshlarge (1).ogg'
+	sfx_post_delay = 'sound/combat/sidesweep_hit.ogg'
+	cooldown = 120 SECONDS
+	stamcost = 20
+
+/datum/special_intent/infernal_staff_erruption/apply_hit(turf/T)
+	for(var/mob/living/L in get_hearers_in_view(0, T))
+		if(L != howner)
+
+			if(L.mobility_flags & MOBILITY_STAND)
+				L.adjust_fire_stacks(3)
+				L.ignite_mob()
+	..()
+
+#undef INFERNALSTAFF1
+#undef INFERNALSTAFF2
+#undef INFERNALSTAFF3
+
+#define MTSTAFF 1 SECONDS
+
+/datum/special_intent/mountain_staff_slam
+	name = "Mountain Impact"
+	desc = "Flames errupt around you, in a chaotic seeming pattern."
+	tile_coordinates = list(
+		list(0,0), list(0,1), list(0,2), list(0,3),
+		list(1,0, MTSTAFF), list(1,1, MTSTAFF), list(1,2, MTSTAFF), list(1,3, MTSTAFF),
+		list(2,0, MTSTAFF), list(2,1, MTSTAFF), list(2,2, MTSTAFF), list(2,3, MTSTAFF),
+		list(-1,0, MTSTAFF), list(-1,1, MTSTAFF), list(-1,2, MTSTAFF), list(-1,3, MTSTAFF),
+		list(-2,0, MTSTAFF), list(-2,1, MTSTAFF), list(-2,2, MTSTAFF), list(-2,3, MTSTAFF),
+	)
+	use_clickloc = FALSE
+	respect_adjacency = TRUE
+	respect_dir = TRUE
+	delay = 0.7 SECONDS
+	fade_delay = 0.5 SECONDS
+	pre_icon = 'icons/effects/telegraph.dmi'
+	pre_icon_state = "warning"
+	post_icon_state = "kick_fx"
+	sfx_pre_delay = 'sound/combat/wooshes/bladed/wooshlarge (1).ogg'
+	sfx_post_delay = 'sound/combat/sidesweep_hit.ogg'
+	cooldown = 120 SECONDS
+	stamcost = 20
+
+#undef MTSTAFF
