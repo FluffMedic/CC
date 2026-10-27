@@ -62,6 +62,7 @@
 
 /datum/outfit/job/roguetown/akula_npc/pre_equip(mob/living/carbon/human/H)
 	head =  /obj/item/clothing/head/roguetown/helmet/tricorn
+	neck = /obj/item/clothing/neck/roguetown/coif/padded
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/aalloy
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/aalloy
@@ -126,7 +127,8 @@
 	var/loadout = rand(1,4)
 	switch(loadout)
 		if(1)
-			head =  /obj/item/clothing/head/roguetown/helmet/tricorn
+			head =  /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+			neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/freifechter
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/aalloy
 			shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/aalloy
@@ -144,6 +146,7 @@
 			r_hand = /obj/item/rogueweapon/greatsword
 		if(3)
 			head =  /obj/item/clothing/head/roguetown/helmet/leather/saiga
+			neck = /obj/item/clothing/neck/roguetown/coif/padded
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/aalloy
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
@@ -188,6 +191,7 @@
 /datum/outfit/job/roguetown/akula_rogue/pre_equip(mob/living/carbon/human/H)
 	ADD_TRAIT(src, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	head =  /obj/item/clothing/head/roguetown/helmet/tricorn
+	neck = /obj/item/clothing/neck/roguetown/coif/padded
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/sailor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/aalloy
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/aalloy
@@ -196,19 +200,19 @@
 	var/loadout = rand(1,4)
 	switch(loadout)
 		if(1)
-			r_hand = r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/bone
+			r_hand =/obj/item/rogueweapon/huntingknife/idagger/steel/bone
 		if(2)
 			r_hand = /obj/item/rogueweapon/huntingknife/idagger/silver
 		if(3)
 			r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/kazengun
 		if(4)
-			r_hand = r_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/bone
+			r_hand =/obj/item/rogueweapon/huntingknife/idagger/steel
 
-	H.STASTR = 7
-	H.STASPD = 14
+	H.STASTR = 8
+	H.STASPD = 15
 	H.STACON = 8
 	H.STAWIL = 10
-	H.STAINT = 14
+	H.STAINT = 13
 
 	H.adjust_skillrank(/datum/skill/craft/carpentry, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/masonry, 1, TRUE)
