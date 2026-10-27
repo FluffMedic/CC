@@ -12,7 +12,7 @@
 	name = "staff of exchange"
 	icon_state = "faestaff"
 	specialcaster_effect = 1
-	special = /datum/special_intent/polearm_backstep
+	special = /datum/special_intent/polearm_backstep/fae
 
 /obj/item/rogueweapon/woodstaff/implement/special/infernal
 	base_implement_name = "inferno staff"
@@ -132,7 +132,7 @@
 #define INFERNALSTAFF3 2 SECONDS
 /datum/special_intent/infernal_staff_erruption
 	name = "Infernal Erruption"
-	desc = "Flames errupt around you, in a chaotic seeming pattern."
+	desc = "Fire errupts in a spot you chose several times over."
 	tile_coordinates = list(
 		list(0,0), list(0,-2), list(-2,-3), list(0,1), list(2,-3),
 		list(1,0, INFERNALSTAFF1), list(-1,-2, INFERNALSTAFF1), list(1,1, INFERNALSTAFF1), list(-1,1, INFERNALSTAFF1), list(2,-2, INFERNALSTAFF1), list(-1,-2, INFERNALSTAFF1),
@@ -140,18 +140,19 @@
 		list(1,-2, INFERNALSTAFF3), list(-1,0, INFERNALSTAFF3), list(-2, -1, INFERNALSTAFF3), list(2, -1, INFERNALSTAFF3)
 
 	)
-	use_clickloc = FALSE
+	use_clickloc = TRUE
 	respect_adjacency = TRUE
 	respect_dir = TRUE
 	delay = 0.7 SECONDS
 	fade_delay = 0.5 SECONDS
+	_icon = 'icons/effects/fire.dmi'
 	pre_icon = 'icons/effects/telegraph.dmi'
 	pre_icon_state = "warning"
-	post_icon_state = "flame"
+	post_icon_state = "3"
 	sfx_pre_delay = 'sound/combat/wooshes/bladed/wooshlarge (1).ogg'
 	sfx_post_delay = 'sound/combat/sidesweep_hit.ogg'
 	cooldown = 120 SECONDS
-	stamcost = 20
+	stamcost = 35
 
 /datum/special_intent/infernal_staff_erruption/apply_hit(turf/T)
 	for(var/mob/living/L in get_hearers_in_view(0, T))
@@ -166,17 +167,21 @@
 #undef INFERNALSTAFF2
 #undef INFERNALSTAFF3
 
-#define MTSTAFF 1 SECONDS
+#define MTSTAFF1 1 SECONDS
+#define MTSTAFF2 1.4 SECONDS
+#define MTSTAFF3 1.8 SECONDS
+#define MTSTAFF4 2.2 SECONDS
 
 /datum/special_intent/mountain_staff_slam
-	name = "Mountain Impact"
-	desc = "Flames errupt around you, in a chaotic seeming pattern."
+	name = "Landslide"
+	desc = "Creates waves of earth."
 	tile_coordinates = list(
-		list(0,0), list(0,1), list(0,2), list(0,3),
-		list(1,0, MTSTAFF), list(1,1, MTSTAFF), list(1,2, MTSTAFF), list(1,3, MTSTAFF),
-		list(2,0, MTSTAFF), list(2,1, MTSTAFF), list(2,2, MTSTAFF), list(2,3, MTSTAFF),
-		list(-1,0, MTSTAFF), list(-1,1, MTSTAFF), list(-1,2, MTSTAFF), list(-1,3, MTSTAFF),
-		list(-2,0, MTSTAFF), list(-2,1, MTSTAFF), list(-2,2, MTSTAFF), list(-2,3, MTSTAFF),
+		list(0,0), list(1,0), list(2,0), list(-1,0), list(-2,0),
+		list(0,1, MTSTAFF1), list(1,1, MTSTAFF1), list(2,1, MTSTAFF1), list(-1,1, MTSTAFF1), list(-2,1, MTSTAFF1),
+		list(0,2, MTSTAFF2), list(1,2, MTSTAFF2), list(2,2, MTSTAFF2), list(-1,2, MTSTAFF2), list(-2,2, MTSTAFF2),
+		list(0,3, MTSTAFF3), list(1,3, MTSTAFF3), list(2,3, MTSTAFF3), list(-1,3, MTSTAFF3), list(-2,3, MTSTAFF3),
+		list(0,4, MTSTAFF4), list(1,4, MTSTAFF4), list(2,4, MTSTAFF4), list(-1,4, MTSTAFF4), list(-2,4, MTSTAFF4),
+
 	)
 	use_clickloc = FALSE
 	respect_adjacency = TRUE
@@ -189,6 +194,16 @@
 	sfx_pre_delay = 'sound/combat/wooshes/bladed/wooshlarge (1).ogg'
 	sfx_post_delay = 'sound/combat/sidesweep_hit.ogg'
 	cooldown = 120 SECONDS
-	stamcost = 20
+	stamcost = 35
 
-#undef MTSTAFF
+#undef MTSTAFF1
+#undef MTSTAFF2
+#undef MTSTAFF3
+#undef MTSTAFF4
+
+/datum/special_intent/polearm_backstep/fae
+	name = "Fae Backstep"
+	desc = "Leap back a great deal and strike any foes that linger nearby"
+	cooldown = 120 SECONDS
+	stamcost = 35
+	backstep_dist = 4
