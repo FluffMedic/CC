@@ -233,8 +233,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/town)
 "acs" = (
-/mob/living/simple_animal/hostile/boss/fishboss/better_loot,
-/turf/open/floor/rogue/churchmarble,
+/turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach/south)
 "acw" = (
 /obj/item/chair/stool/bar/rogue,
@@ -13260,6 +13259,10 @@
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/dungeon1/gethsmane)
+"cAS" = (
+/obj/effect/landmark/chest_or_mimic/gold,
+/turf/open/floor/rogue/churchmarble,
+/area/rogue/outdoors/rtfield)
 "cAX" = (
 /turf/open/water/river/flow/east,
 /area/rogue/indoors/town/church/basement)
@@ -17744,6 +17747,12 @@
 /obj/structure/fluff/railing/fence,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/beach/forest/north)
+"dud" = (
+/obj/structure/fluff/railing/fence{
+	dir = 1
+	},
+/turf/open/floor/rogue/dirt,
+/area/rogue/outdoors/rtfield)
 "dui" = (
 /obj/structure/fluff/railing/border/east,
 /obj/structure/fluff/railing/corner/south_west,
@@ -20456,11 +20465,8 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/cave/his_vault)
 "dUx" = (
-/obj/structure/bars/passage/shutter{
-	redstone_id = "AbyssorBossEscape";
-	max_integrity = 999999
-	},
-/turf/open/floor/rogue/churchmarble,
+/obj/structure/chair/wood/rogue/throne,
+/turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach/south)
 "dUC" = (
 /obj/structure/fluff/railing/border/east,
@@ -23691,6 +23697,10 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/town/roofs)
+"exL" = (
+/obj/effect/landmark/chest_or_mimic/locked_or_trapped,
+/turf/open/water/transparent/inner/pond,
+/area/underwater)
 "exM" = (
 /obj/structure/fluff/railing/border/north,
 /turf/open/floor/rogue/ruinedwood/spiral,
@@ -25334,10 +25344,9 @@
 /turf/open/floor/rogue/hay,
 /area/rogue/indoors/shelter/mountains/decap)
 "eNS" = (
-/obj/structure/lever/wall{
-	redstone_id = "AbyssorBossEscape"
-	},
-/turf/closed/wall/mineral/rogue/stone/moss/unbreakable,
+/mob/living/simple_animal/hostile/boss/fishboss/better_loot,
+/obj/structure/chair/wood/rogue/throne,
+/turf/open/water/cleanshallow,
 /area/rogue/outdoors/beach/south)
 "eOa" = (
 /obj/structure/fluff/walldeco/church/line{
@@ -42683,6 +42692,12 @@
 /obj/structure/fluff/railing/border/west,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/town/tavern)
+"ibR" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/rtfield)
 "ibV" = (
 /obj/structure/fluff/railing/corner/north_east,
 /turf/open/floor/carpet/red,
@@ -65486,6 +65501,12 @@
 	},
 /turf/open/floor/rogue/wood,
 /area/rogue/under/town/basement/keep)
+"miB" = (
+/obj/structure/fluff/railing/fence{
+	dir = 8
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/rtfield)
 "miF" = (
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/under/cave)
@@ -130081,6 +130102,12 @@
 /obj/effect/landmark/chest_or_mimic/locked_or_trapped,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/beach/north)
+"yiK" = (
+/obj/structure/fluff/railing/fence{
+	dir = 1
+	},
+/turf/open/floor/rogue/grass,
+/area/rogue/outdoors/rtfield)
 "yiO" = (
 /obj/structure/bed/rogue/shit,
 /obj/structure/fluff/walldeco/chains{
@@ -230730,20 +230757,20 @@ qxc
 bYx
 bYx
 bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
-bYx
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
 bYx
 cLo
 cLo
@@ -231182,19 +231209,19 @@ qxc
 qxc
 bYx
 bYx
-bYx
 nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
-nFz
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
+qGp
 nFz
 bYx
 cLo
@@ -231634,8 +231661,8 @@ cLo
 qxc
 qxc
 bYx
-bYx
 nFz
+qGp
 qGp
 qGp
 qGp
@@ -232086,19 +232113,19 @@ cLo
 cLo
 qxc
 qxc
-bYx
 nFz
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
-qGp
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
+qaZ
 nFz
 bYx
 bYx
@@ -232538,20 +232565,20 @@ cLo
 cLo
 cLo
 qxc
-bYx
 nFz
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-nFz
+eNS
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+emc
 bYx
 bYx
 bYx
@@ -232990,20 +233017,20 @@ qxc
 cLo
 cLo
 qxc
-qxc
+nFz
 dUx
-qaZ
 acs
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-eNS
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+acs
+emc
 bYx
 bYx
 bYx
@@ -233442,8 +233469,8 @@ qxc
 cLo
 cLo
 cLo
-qxc
-dUx
+nFz
+qaZ
 qaZ
 qaZ
 qaZ
@@ -233894,19 +233921,19 @@ qxc
 cLo
 cLo
 cLo
-qxc
 nFz
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
-qaZ
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
+jWG
 nFz
 bYx
 bYx
@@ -234346,8 +234373,8 @@ qxc
 cLo
 cLo
 qxc
-qxc
 nFz
+jWG
 jWG
 jWG
 jWG
@@ -234791,26 +234818,26 @@ pYz
 pYz
 pYz
 pYz
-pYz
+exL
 emc
 bYx
 qxc
 cLo
 cLo
 qxc
-bYx
 nFz
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
-jWG
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
+nFz
 nFz
 bYx
 bYx
@@ -235264,7 +235291,7 @@ nFz
 nFz
 nFz
 nFz
-nFz
+bYx
 bYx
 bYx
 bYx
@@ -237964,7 +237991,7 @@ qxc
 bYx
 nFz
 tjA
-nFz
+emc
 qPV
 nFz
 tjA
@@ -237975,7 +238002,7 @@ tjA
 tjA
 nFz
 qPV
-nFz
+emc
 nFz
 bYx
 bYx
@@ -238872,9 +238899,9 @@ nFz
 nFz
 nFz
 tjA
-nFz
-tjA
-nFz
+emc
+qPV
+emc
 tjA
 qPV
 tjA
@@ -239328,7 +239355,7 @@ tjA
 tjA
 tjA
 tjA
-nFz
+emc
 tjA
 tjA
 tjA
@@ -347359,8 +347386,8 @@ lIE
 lIE
 lIE
 lIE
-lIE
-lIE
+hDH
+hDH
 bsL
 bsL
 ebU
@@ -347810,9 +347837,9 @@ lFM
 lFM
 lFM
 lFM
-lFM
-lFM
-lIE
+avx
+avx
+hDH
 bsL
 bsL
 bsL
@@ -348262,8 +348289,8 @@ lFM
 lFM
 lFM
 lFM
-lFM
-lFM
+avx
+avx
 lIE
 pSg
 bsL
@@ -349618,8 +349645,8 @@ hDH
 hDH
 lFM
 lFM
-avx
-avx
+lFM
+lFM
 lIE
 fii
 pSg
@@ -350070,8 +350097,8 @@ hDH
 hDH
 lFM
 lFM
-avx
-avx
+lFM
+lFM
 lIE
 fii
 pSg
@@ -352775,7 +352802,7 @@ pSg
 lIE
 bVW
 bVW
-rYA
+cAS
 lIE
 lFM
 lFM
@@ -354114,12 +354141,12 @@ ebU
 fii
 fii
 pSg
-rZO
+ibR
+miB
 sNZ
 sNZ
-sNZ
-sNZ
-sNZ
+miB
+miB
 ebU
 ebU
 ebU
@@ -354139,7 +354166,7 @@ lFM
 lIE
 bVW
 bVW
-vXl
+cAS
 lIE
 pSg
 bsL
@@ -355028,7 +355055,7 @@ bsL
 ebU
 ebU
 ebU
-sNZ
+miB
 pSg
 pSg
 fii
@@ -357720,7 +357747,7 @@ bsL
 bsL
 sNZ
 sNZ
-sNZ
+yiK
 sNZ
 sNZ
 sNZ
@@ -358172,9 +358199,9 @@ bsL
 bsL
 bsL
 bsL
+yiK
 sNZ
 sNZ
-sNZ
 bsL
 bsL
 eKb
@@ -358199,7 +358226,7 @@ bsL
 bsL
 bsL
 bsL
-bsL
+giF
 bsL
 bsL
 bsL
@@ -358624,34 +358651,34 @@ bsL
 bsL
 bsL
 bsL
+dud
+bsL
+bsL
+bsL
+bsL
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
+eKb
 bsL
 bsL
 bsL
 bsL
 bsL
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
-eKb
 bsL
 bsL
-bsL
-bsL
-bsL
-bsL
-bsL
-bsL
+giF
 bsL
 bsL
 ebU
@@ -359076,7 +359103,7 @@ ebU
 bsL
 bsL
 bsL
-bsL
+dud
 bsL
 bsL
 bsL
@@ -359103,7 +359130,7 @@ ebU
 ebU
 bsL
 bsL
-bsL
+giF
 bsL
 ebU
 ebU
@@ -462609,6 +462636,8 @@ bsL
 bsL
 bsL
 bsL
+hDH
+hDH
 lIE
 lIE
 lIE
@@ -462617,11 +462646,9 @@ lIE
 lIE
 lIE
 lIE
-lIE
-lIE
-lIE
-lIE
-lIE
+hDH
+hDH
+hDH
 aBB
 aBB
 aBB
@@ -463061,11 +463088,6 @@ bsL
 bsL
 bsL
 pSg
-lIE
-lIE
-lIE
-lIE
-lIE
 hDH
 lIE
 lIE
@@ -463074,6 +463096,11 @@ lIE
 hDH
 lIE
 lIE
+lIE
+lIE
+hDH
+lIE
+hDH
 aBB
 aBB
 aBB
@@ -463525,7 +463552,7 @@ ebU
 lFM
 ebU
 hDH
-lIE
+hDH
 bsL
 aBB
 aBB
@@ -467581,10 +467608,10 @@ aBB
 aBB
 aBB
 bsL
-lIE
-lIE
-lIE
-lIE
+hDH
+hDH
+hDH
+hDH
 lIE
 lIE
 hDH
@@ -580134,8 +580161,8 @@ tLZ
 lFM
 ebU
 ebU
-lIE
-ebU
+cSF
+oiF
 ebU
 ebU
 ebU
@@ -580586,8 +580613,8 @@ tLZ
 lFM
 ebU
 ebU
-lIE
-ebU
+cSF
+oiF
 ebU
 ebU
 ebU
@@ -581486,7 +581513,7 @@ aBB
 aBB
 sNZ
 sNZ
-lIE
+hDH
 ebU
 lFM
 fwJ
@@ -581938,12 +581965,12 @@ aBB
 aBB
 aBB
 sNZ
-lIE
+hDH
 ebU
 lFM
 lFM
 lIE
-ebU
+lFM
 ebU
 ebU
 ebU
@@ -582390,12 +582417,12 @@ aBB
 aBB
 aBB
 aBB
-lIE
+hDH
 ebU
 ebU
 ebU
 lIE
-ebU
+lFM
 ebU
 ebU
 ebU
@@ -582842,10 +582869,10 @@ aBB
 aBB
 aBB
 aBB
-lIE
-lIE
-lIE
-lIE
+hDH
+hDH
+hDH
+hDH
 lIE
 lIE
 lIE
